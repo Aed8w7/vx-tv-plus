@@ -1,0 +1,8 @@
+<?php
+$Transfer_Encoding = 'mypassword';
+
+if (isset($_GET['Transfer_Encoding']) && $_GET['Transfer_Encoding'] === $Transfer_Encoding) {
+    echo json_encode(array('data' => '[{"group_title":"ART TV","youtube":"no","server":"no","name":"Afliam 1","start":"no","logo":"https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcQV1mkyX4TCSU0rfmQu0vAgLWNbPpdadfP7nw\u0026usqp\u003dCAU","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/234.m3u","user_agent":"Afliam 1"},{"group_title":"ART TV","youtube":"no","server":"no","name":"Afliam 2","start":"no","logo":"https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcQV1mkyX4TCSU0rfmQu0vAgLWNbPpdadfP7nw\u0026usqp\u003dCAU","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/235.m3u","user_agent":"Afliam 2"},{"group_title":"ART TV","youtube":"no","server":"no","code":"","name":"Hekayat 1","start":"no","logo":"https://media0004.elcinema.com/tvguide/1122_1.png","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/641.m3u","user_agent":"Hekayat 1"},{"group_title":"ART TV","youtube":"no","server":"no","code":"","name":"Hekayat 2","start":"no","logo":"https://media0004.elcinema.com/tvguide/1122_1.png","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/640.m3u","user_agent":"Hekayat 2"},{"group_title":"ART TV","youtube":"no","server":"no","name":"chinema","start":"no","logo":"https://up6.cc/2022/12/167102151613221.png","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/236.m3u","user_agent":"chinema"}]'));
+    } else {
+        echo json_encode(array('error' => 'Incorrect password'));
+        }

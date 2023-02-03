@@ -1,0 +1,8 @@
+<?php
+$Transfer_Encoding = 'mypassword';
+
+if (isset($_GET['Transfer_Encoding']) && $_GET['Transfer_Encoding'] === $Transfer_Encoding) {
+    echo json_encode(array('data' => '[{"group_title":"Christianity","youtube":"no","server":"no","name":"ABN","logo":"https://encrypted-tbn0.gstatic.com/images?q\u003dtbn:ANd9GcTxPdPCRsFUzMWMt_D6hncB4Cnk1voVt5es6Q\u0026usqp\u003dCAU","url":"http://rtmp.abnsat.com/hls/arabic.m3u8"},{"group_title":"Christianity","youtube":"no","server":"no","code":"","name":"AGHAPY","logo":"https://up6.cc/2023/01/167466881079591.png","url":"https://5d658d7e9f562.streamlock.net/aghapy.tv/aghapy.smil/chunklist_w1999246460_b1400000_slar.m3u8","user_agent":"AGHAPY"},{"group_title":"Christianity","youtube":"no","server":"no","code":"","name":"CTV","logo":"https://up6.cc/2023/01/167466898831071.png","url":"https://5d658d7e9f562.streamlock.net/ctvchannel.tv/ctv.smil/chunklist.m3u8","user_agent":"CTV"},{"group_title":"Christianity","youtube":"no","server":"no","code":"","name":"LOGOS","logo":"https://up6.cc/2023/01/167466898836583.png","url":"https://5d658d7e9f562.streamlock.net/logoschannel.com/logostv.smil/chunklist_w683781440_b1592000_slar.m3u8","user_agent":"LOGOS"},{"group_title":"Christianity","youtube":"no","server":"no","code":"","name":"كوجى","logo":"https://up6.cc/2023/01/167466898834072.png","url":"https://5d12bc59c4748.streamlock.net/koogi.tv/koogi.smil/chunklist_w195644888_b896000_slar_t64SEQ\u003d.m3u8","user_agent":"كوجى"},{"group_title":"Christianity","youtube":"no","server":"no","name":"معجزة","logo":"https://live.miraclechannel.com/images/logo.png?55f5633","url":"https://miracle.stream.boxigy.com/hls/miracle1.m3u8"}]'));
+    } else {
+        echo json_encode(array('error' => 'Incorrect password'));
+        }

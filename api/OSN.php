@@ -1,0 +1,8 @@
+<?php
+$Transfer_Encoding = 'mypassword';
+
+if (isset($_GET['Transfer_Encoding']) && $_GET['Transfer_Encoding'] === $Transfer_Encoding) {
+    echo json_encode(array('data' => '[{"group_title":"OSN","youtube":"no","server":"no","name":"AcTion","logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/OSN_2020_logo.svg/1200px-OSN_2020_logo.svg.png","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/1464.m3u","user_agent":"AcTion"},{"group_title":"OSN","youtube":"no","server":"no","name":"YaHala 1","logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/OSN_2020_logo.svg/1200px-OSN_2020_logo.svg.png","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/1462.m3u","user_agent":"YaHala 1"},{"group_title":"OSN","youtube":"no","server":"no","name":"YaHala 2","logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/OSN_2020_logo.svg/1200px-OSN_2020_logo.svg.png","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/1700.m3u","user_agent":"YaHala 2"},{"group_title":"OSN","youtube":"no","server":"no","name":"YaHala 3","logo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/OSN_2020_logo.svg/1200px-OSN_2020_logo.svg.png","api":"","url":"http://iptv.ndasat.xyz:88/live/228584403986534/228584403986534/1461.m3u","user_agent":"YaHala 3"}]'));
+    } else {
+        echo json_encode(array('error' => 'Incorrect password'));
+        }
